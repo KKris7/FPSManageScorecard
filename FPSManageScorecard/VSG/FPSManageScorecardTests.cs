@@ -41,7 +41,7 @@ namespace VSG
                 "#pageHeader > div > div > div.hidden-sm.hidden-xs >" +
                 " div > div > div > ul > li:nth-child(2) > a"))
                 .Click();
-
+            // need to find a better way
             Thread.Sleep(1500);
 
             driver.FindElement(By.CssSelector("#content > div.shuffle-animation.ng-scope > div:nth-child(2) >" +
@@ -101,7 +101,7 @@ namespace VSG
                 "#pageHeader > div > div > div.hidden-sm.hidden-xs >" +
                 " div > div > div > ul > li:nth-child(2) > a"))
                 .Click();
-
+            // need to find a better way
             Thread.Sleep(1500);
 
             driver.FindElement(By.CssSelector("#content > div.shuffle-animation.ng-scope > div:nth-child(2) >" +
@@ -175,7 +175,7 @@ namespace VSG
                 "#pageHeader > div > div > div.hidden-sm.hidden-xs >" +
                 " div > div > div > ul > li:nth-child(2) > a"))
                 .Click();
-
+            // need to find a better way
             Thread.Sleep(1500);
 
             driver.FindElement(By.CssSelector("#content > div.shuffle-animation.ng-scope > div:nth-child(2) >" +
@@ -221,7 +221,7 @@ namespace VSG
             objectiveField.SendKeys("35000");
 
             driver.FindElement(By.TagName("body")).SendKeys(Keys.Home);
-
+            // need to find a better way
             Thread.Sleep(1500);
 
             driver.FindElement(By.CssSelector("span:nth-child(1) > button"))
@@ -235,12 +235,12 @@ namespace VSG
             opportunityField = driver.FindElement(By.CssSelector("#opportunityInputField"));
             opportunityField.Clear();
             opportunityField.SendKeys("20");
-
+            // need to find a better way
             Thread.Sleep(1500);
 
             driver.FindElement(By.CssSelector("span:nth-child(1) > button"))
                .Click();
-
+            // should add some assertions 
             driver.FindElement(By.CssSelector("#scorecardsGridInner > div.k-grid-content.k-auto-scrollable >" +
                 " table > tbody > tr > td:nth-child(4)"))
                 .Click();
